@@ -183,8 +183,5 @@ def encryptTranspositionCipher(text, key):
     return output
 
 
-def decryptTranspositionCipher(text, key):
-    pass
-
 
 
