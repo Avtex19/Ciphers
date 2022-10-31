@@ -12,22 +12,6 @@ def encryptIndexSubstitutionCipher(text):
 
 
 
-def decryptIndexSubstitutionCipher(text):
-    output = ''
-    letters = {'01': 'a', '02': 'b', '03': 'c ', '04': 'd ', '05': 'e ', '06': 'f ', '07': 'g ', '08': 'h ',
-               '09': 'i ',
-               '10': 'j ', '11': 'k ', '12': 'l ', '13': 'm ', '14': 'n', '15': 'o ', '16': 'p ', '17': 'q ',
-               '18': 'r ',
-               '19': 's ', '20': 't ', '21': 'u ', '22': 'v ', '23': 'w', '24': 'x ', '25': 'y ', '26': 'z '}
-    stick = ''
-    for index in range(0, len(text), 3):
-        stick += text[index] + text[index + 1]
-        output += letters[stick]
-        stick = ''
-    return output
-
-
-
 
 # ----------------------Morse Code----------------------
 morseCode = {
